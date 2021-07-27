@@ -6,7 +6,7 @@ import os
 from setuptools import setup
 from setuptools.command.install import install
 
-
+first_name = "Hitesh"
 def build_translations():
     from tuxemon.core.locale import T
 
