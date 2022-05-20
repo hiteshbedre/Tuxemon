@@ -26,10 +26,26 @@
 # Leif Theden <leif.theden@gmail.com
 #
 #
+private User extractUserFromResultSet(ResultSet rs) throws SQLException {
+        User user = new User();
+        user.setId( rs.getInt("user_id") );
+        user.setEmail(rs.getString("email"));
+        user.setAge( rs.getInt("age") );
+        user.setUsername( rs.getString("username") );
+        user.setPass( rs.getString("password") );
 from argparse import ArgumentParser
 
 if __name__ == '__main__':
     from tuxemon.core import prepare, main
+    
+    blPhone.setText("Phone *");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setText("Email");
+
+        txtEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+
     config = prepare.CONFIG
 
     parser = ArgumentParser()
